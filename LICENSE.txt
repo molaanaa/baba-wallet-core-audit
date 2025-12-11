@@ -1,0 +1,12 @@
+Copyright (c) 2025 BABA Wallet / Rayan Pardaz Dadehaye Molaanaa
+All Rights Reserved.
+
+NOTICE: The code in this repository is proprietary and confidential.
+
+1. PERMISSION TO VIEW: Permission is hereby granted to any person obtaining a copy of this software to view, inspect, and audit the source code for the sole purpose of verifying security practices and transparency.
+
+2. NO LICENSE TO USE: No license is granted to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software.
+
+3. NO MODIFICATION: You may not modify the code or create derivative works based on this code.
+
+This software is provided "as is", without warranty of any kind.
