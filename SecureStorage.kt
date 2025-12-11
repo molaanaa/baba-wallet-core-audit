@@ -1,3 +1,15 @@
+/*
+ * Copyright (c) 2025 BABA Wallet / [Your Legal Name or Company Name]
+ * All Rights Reserved.
+ *
+ * This code is part of the BABA Wallet project.
+ *
+ * Unauthorized copying of this file, via any medium, is strictly prohibited.
+ * The content is proprietary and confidential.
+ *
+ * Written by [Your Name], December 2025.
+ */
+
 package com.molaanaa.babawallet
 
 import android.content.Context
