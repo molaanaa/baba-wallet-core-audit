@@ -14,14 +14,14 @@ The `SecureStorage` module implements a defense-in-depth strategy using Android'
 
 ### Key Features:
 1.  **Hardware-Backed Keystore:**
-    * We utilize the Android Keystore System to generate cryptographic keys that never leave the device's hardware security module (TEE/StrongBox).
+    * We utilize the Android Keystore System to generate cryptographic keys that never leave the device's hardware security module (TEE).
 2.  **StrongBox Enforcement:**
     * On devices running Android P (API 28) and above, we explicitly request `StrongBox` backing, ensuring keys are stored in a separate secure hardware element.
 3.  **AES-256 Encryption:**
     * Data is encrypted using `AES256_GCM` (Galois/Counter Mode) for authenticated encryption.
     * Keys are encrypted using `AES256_SIV`.
-4.  **No Plaintext Storage:**
-    * Private keys are never stored in plaintext. They are encrypted immediately upon creation or import.
+4.  **Non-Custodial Storage:**
+    * Private keys are encrypted immediately upon creation. The application logic allows users to enable Biometric Authentication (Fingerprint/FaceID) as an access gate before decryption occurs.
 
 ## ⚠️ Compilation Note
 This repository contains the `SecureStorage.kt` file in isolation. Dependencies such as the `Account` data model and `Base58` utilities are omitted to protect the full intellectual property of the application. This code is intended for reading and auditing, not for compiling or running independently.
