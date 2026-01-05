@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2025 BABA Wallet / [Your Legal Name or Company Name]
+ * Copyright (c) 2025 BABA Wallet / Rayan Afzar Molaanaa
  * All Rights Reserved.
  *
  * This code is part of the BABA Wallet project.
