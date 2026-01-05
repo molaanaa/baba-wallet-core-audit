@@ -7,7 +7,7 @@
  * Unauthorized copying of this file, via any medium, is strictly prohibited.
  * The content is proprietary and confidential.
  *
- * Written by [Your Name], December 2025.
+ * Written by Mohsen Ahmadi, December 2025.
  */
 
 package com.molaanaa.babawallet
