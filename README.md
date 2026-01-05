@@ -27,7 +27,7 @@ The `SecureStorage` module implements a defense-in-depth strategy using Android'
 This repository contains the `SecureStorage.kt` file in isolation. Dependencies such as the `Account` data model and `Base58` utilities are omitted to protect the full intellectual property of the application. This code is intended for reading and auditing, not for compiling or running independently.
 
 ## ⚖️ Legal & License
-**Copyright (c) 2025 BABA Wallet / Rayan Pardaz Dadehaye Molaanaa. All Rights Reserved.**
+**Copyright (c) 2025 BABA Wallet / Rayan Afzar Dadehaye Molaanaa. All Rights Reserved.**
 
 * **View Only:** You are permitted to view and audit this code.
 * **No Usage:** You are **not** permitted to copy, modify, distribute, or use this code in your own applications.
