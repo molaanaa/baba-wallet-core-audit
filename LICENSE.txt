@@ -1,4 +1,4 @@
-Copyright (c) 2025 BABA Wallet / Rayan Pardaz Dadehaye Molaanaa
+Copyright (c) 2025 BABA Wallet / Rayan Afzar Dadehaye Molaanaa
 All Rights Reserved.
 
 NOTICE: The code in this repository is proprietary and confidential.
