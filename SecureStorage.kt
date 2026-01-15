@@ -30,9 +30,9 @@ object SecureStorage {
     private const val KEY_DATA_MIGRATED = "data_migrated_to_byte_array"
     private const val KEY_APP_PIN = "app_pin" // New constant for PIN
 
-    // DTO for safe serialization
+  
     private data class AccountDto(
-        val privateKey: String, // Base64 encoded for new, Base58 for old
+        val privateKey: String, 
         val publicKey: String,
         val name: String?,
         val order: Int
@@ -74,7 +74,6 @@ object SecureStorage {
         return prefs.getBoolean(KEY_BIOMETRIC_AUTH_ENABLED, false)
     }
 
-    // --- New PIN Logic ---
     fun saveAppPin(pin: String) {
         prefs.edit { putString(KEY_APP_PIN, pin) }
     }
@@ -86,7 +85,7 @@ object SecureStorage {
     fun hasAppPin(): Boolean {
         return prefs.contains(KEY_APP_PIN)
     }
-    // ---------------------
+
 
     fun saveAccount(account: Account) {
         val allAccounts = getAccounts().toMutableList()
@@ -107,7 +106,7 @@ object SecureStorage {
         }
         prefs.edit {
             putString(KEY_ACCOUNTS, gson.toJson(dtoList))
-            putBoolean(KEY_DATA_MIGRATED, true) // Mark data as migrated
+            putBoolean(KEY_DATA_MIGRATED, true) 
         }
     }
 
@@ -135,10 +134,8 @@ object SecureStorage {
 
         val accounts = dtoList.map { dto ->
             val privateKeyBytes = if (dataMigrated) {
-                // New format: Decode from Base64
                 Base64.decode(dto.privateKey, Base64.NO_WRAP)
             } else {
-                // Old format: Decode from Base58
                 Base58.decode(dto.privateKey) ?: ByteArray(0)
             }
             Account(
@@ -148,8 +145,6 @@ object SecureStorage {
                 order = dto.order
             )
         }
-
-        // If data was not migrated and we successfully read accounts, save them in the new format.
         if (!dataMigrated && accounts.isNotEmpty()) {
             saveAccounts(accounts)
         }
